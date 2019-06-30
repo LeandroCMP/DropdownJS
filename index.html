@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown - JS</title>
+
+    <style>
+        
+        ul{
+            list-style-type: none;
+        }
+
+    </style>
+
+    <script>
+    
+        function dropdown(){
+            var status = document.getElementById('ul');
+            if(status.style.display == 'none'){
+                status.style.display = 'block';
+            } else{
+                status.style.display = 'none';
+            }
+        
+        }
+    
+    </script>
+
+</head>
+<body>
+    
+    <div>
+        <button onclick="dropdown()">Click Here</button>
+
+        <ul style="display: none;" id="ul">
+            <li>Conteúdo1</li>
+            <li>Conteúdo2</li>
+            <li>Conteúdo3</li>
+            <li>Conteúdo4</li>
+        </ul>
+    </div>
+
+</body>
+</html>
